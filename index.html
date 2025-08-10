@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TripAdvisor Clone</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="/your-path-to-uicons/css/uicons-[your-style].css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="logo">
+    <img src="./images/Tripadvisor_logo_PNG1.png" alt="Logo">
+  </div>
+
+  <div class="nav-links">
+    <div class="nav-links__s1">
+      <a href="#">Rewards</a>
+      <a href="#">Discover</a>
+      <a href="#">Trips</a>
+      <a href="#">Review</a>
+      <a href="#">More</a>
+    </div>
+  </div>
+
+  <div class="nav-links__s2">
+    <a href="#" class="currency-btn">
+    <i class="fa-solid fa-globe"></i>
+    USD
+    </a>
+    <a href="#" class="language">EN</a>
+    <a href="#" class="signin">Sign In</a>
+    <a href="#" class="signup-btn">Join</a>
+  </div>
+
+  <div class="navbar__s4">☰</div>
+</nav>
+
+<!-- Dropdown for mobile -->
+<div class="dropdown-menu" id="dropdownmenu">
+  <a href="#">Hotels</a>
+  <a href="#">Things to Do</a>
+  <a href="#">Restaurants</a>
+  <a href="#">Flights</a>
+  <a href="#">Forum</a>
+</div>
+
+<!-- Page Heading -->
+<h1 class="page-title">Where to?</h1>
+
+<!-- Categories -->
+<nav class="categories" role="navigation" aria-label="Main categories">
+  <a class="cat" href="#">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span>Search All</span>
+  </a>
+  <a class="cat" href="#">
+    <i class="fa-solid fa-hotel"></i>
+    <span>Hotels</span>
+  </a>
+  <a class="cat" href="#">
+    <i class="fa-solid fa-calendar-check"></i>
+    <span>Things to do</span>
+  </a>
+  <a class="cat" href="#">
+    <i class="fa-solid fa-utensils"></i>
+    <span>Restaurants</span>
+  </a>
+  <a class="cat" href="#">
+    <i class="fa-solid fa-plane"></i>
+    <span>Flights</span>
+  </a>
+  <a class="cat" href="#">
+    <i class="fa-solid fa-house-chimney"></i>
+    <span>Vacation Rentals</span>
+  </a>
+</nav>
+<!-- Search bar -->
+<div class="search-bar">
+  <input type="text" placeholder="Places to go, things to do, hotels...">
+  <button type="submit"><i class="fa-solid fa-search"></i></button>
+</div>
+
+<!-- Info Carousel Section -->
+<section class="info-carousel-section">
+  <div class="info-text">
+    <h1>Discover the Best Experiences</h1>
+    <p>
+      Explore top-rated hotels, restaurants, flights, and things to do — all tailored to your interests. Book easily and get trusted reviews from millions of travelers worldwide.
+    </p>
+    <a href="#" class="btn-primary">Learn More</a>
+  </div>
+  <div class="photo-carousel">
+    <button class="carousel-btn prev">&lt;</button>
+    <div class="carousel-track-container">
+      <div class="carousel-track">
+        <img src="./images/p4.jpg" alt="Beach" />
+        <img src="./images/p5.jpg" alt="City at night" />
+        <img src="./images/p6.jpg" alt="Mountains" />
+        <img src="./images/p7.jpg" alt="Forest" />
+        <img src="./images/p3.jpg" alt="Desert" />
+        <img src="./images/d5.jpg" alt="Beach" />
+        <img src="./images/d6.jpg" alt="City at night" />
+        <img src="./images/Hawaii.jpg" alt="Mountains" />
+        <img src="./images/d7.jpg" alt="Forest" />
+        <img src="./images/d13.jpg" alt="Desert" />
+      </div>
+    </div>
+    <button class="carousel-btn next">&gt;</button>
+  </div>
+</section>
+
+<div class="sale-image">
+  <img src="./images/display.jpg" alt="sale-image"/>
+  <div class="sale-image__offer">
+    <h2> * FLASH * SALE </h2>
+    <p> A surprise</p>
+    <p> DEAL</p>
+    <p> Just for you! </p>
+   </div>
+</div>
+
+
+  <!-- Recommended section -->
+  <div class="recommended">
+    <h1 class="recommended__title">Recommended for you</h1>
+    <h3>Pick the best places to visit</h3>
+    <div class="recommended__container">
+      <div class="Destinations">
+        <img src="./images/d17.jpg"/>
+        <h3>Rome, Italy</h3>
+        <p>4.9 ⭐⭐⭐⭐</p>
+        <p>$499 <del>999</del></p>
+      </div>
+
+      <div class="Destinations">
+        <img src="./images/d4.jpg"/>
+        <h3>Newyork, United states</h3>
+        <p>4.8 ⭐⭐⭐</p>
+        <p>$599 <del>1099</del></p>
+      </div>
+       <div class="Destinations">
+        <img src="./images/d3.jpg"/>
+        <h3>Venice, Italy</h3>
+        <p>4.8 ⭐⭐⭐</p>
+        <p>$599 <del>1099</del></p>
+      </div>
+       <div class="Destinations">
+        <img src="./images/d8.jpg"/>
+        <h3>Chicago, United states</h3>
+        <p>4.8 ⭐⭐⭐</p>
+        <p>$599 <del>1099</del></p>
+      </div>
+      <div class="Destinations">
+        <img src="./images/d2.jpg"/>
+        <h3>Cairo, Egypt</h3>
+        <p>4.8 ⭐⭐⭐⭐</p>
+        <p>$399 <del>699</del></p>
+      </div>
+
+      <div class="Destinations">
+        <img src="./images/d10.jpg"/>
+        <h3>Paris, France</h3>
+        <p>4.9 ⭐⭐⭐⭐⭐</p>
+        <p>$599 <del>999</del></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- places to visit -->
+  <div class="places">
+    <h1 class="places__title">Gallery</h1>
+    <div class="places__container">
+      <p>France</p>
+      <p>United states</p>
+      <p>Italy</p>
+      <p>Egypt</p>
+      <p>Thailand</p>
+      <p>Maldives</p>
+      <p>Japan</p>
+      <p>United kingdom</p>
+      <p>Australia</p>
+    </div>
+  </div>
+
+  <!-- Most Popular -->
+ <!-- Most Popular -->
+<!-- Most Popular -->
+<div class="popular">
+  <h1 class="popular__title">YOUR NEXT TRIP IS WAITING</h1>
+  <h3 class="popular__subtitle"> Add it to your Bucket List</h3>
+
+  <div class="popular__container">
+    <div class="Travel-card">
+      <img src="./images/d19.jpg" alt="Thailand"/>
+      <h3>Thailand</h3>
+      <p>4.9 ⭐⭐⭐⭐</p>
+      <p>$499 <del>999</del></p>
+      <div class="overlay-content">
+        <p>5 Nights · Resort · Flights Included</p>
+        <a href="#" class="book-btn">Book Now</a>
+      </div>
+    </div>
+
+    <div class="Travel-card">
+      <img src="./images/d18.jpg" alt="Easter Island"/>
+      <h3>Easter Island, Chile</h3>
+      <p>4.7 ⭐⭐⭐</p>
+      <p>$599 <del>1099</del></p>
+      <div class="overlay-content">
+        <p>6 Nights · Guided Tours · Flights Included</p>
+        <a href="#" class="book-btn">Book Now</a>
+      </div>
+    </div>
+
+    <div class="Travel-card">
+      <img src="./images/d15.jpg" alt="San Francisco"/>
+      <h3>San Francisco, USA</h3>
+      <p>4.8 ⭐⭐⭐⭐</p>
+      <p>$899 <del>1999</del></p>
+      <div class="overlay-content">
+        <p>4 Nights · Downtown Stay · City Pass</p>
+        <a href="#" class="book-btn">Book Now</a>
+      </div>
+    </div>
+
+    <div class="Travel-card">
+      <img src="./images/d1.jpg" alt="Rome"/>
+      <h3>Rome, Italy</h3>
+      <p>4.9 ⭐⭐⭐⭐⭐</p>
+      <p>$889 <del>1599</del></p>
+      <div class="overlay-content">
+        <p>5 Nights · Colosseum Tour · Breakfast</p>
+        <a href="#" class="book-btn">Book Now</a>
+      </div>
+    </div>
+
+    <div class="Travel-card">
+      <img src="./images/d16.jpg" alt="Maldives"/>
+      <h3>Maldives</h3>
+      <p>4.8 ⭐⭐⭐⭐</p>
+      <p>$899 <del>1099</del></p>
+      <div class="overlay-content">
+        <p>6 Nights · Water Villa · All Inclusive</p>
+        <a href="#" class="book-btn">Book Now</a>
+      </div>
+    </div>
+
+    <div class="Travel-card">
+      <img src="./images/d12.jpg" alt="Tokyo"/>
+      <h3>Tokyo, Japan</h3>
+      <p>4.8 ⭐⭐⭐⭐</p>
+      <p>$899 <del>1299</del></p>
+      <div class="overlay-content">
+        <p>5 Nights · Rail Pass · City Tour</p>
+        <a href="#" class="book-btn">Book Now</a>
+      </div>
+    </div>
+
+    <div class="Travel-card">
+      <img src="./images/p2.jpg" alt="Australia"/>
+      <h3>Bali</h3>
+      <p>4.8 ⭐⭐⭐⭐</p>
+      <p>$999 <del>1599</del></p>
+      <div class="overlay-content">
+        <p>7 Nights · Great Barrier Reef Tour</p>
+        <a href="#" class="book-btn">Book Now</a>
+      </div>
+    </div>
+
+    <div class="Travel-card">
+      <img src="./images/p6.jpg" alt="Belgium"/>
+      <h3>Belgium</h3>
+      <p>4.8 ⭐⭐⭐⭐</p>
+      <p>$899 <del>1099</del></p>
+      <div class="overlay-content">
+        <p>4 Nights · Chocolate Tour · City Pass</p>
+        <a href="#" class="book-btn">Book Now</a>
+      </div>
+    </div>
+
+    <div class="Travel-card">
+      <img src="./images/p1.jpg" alt="Singapore"/>
+      <h3>Singapore</h3>
+      <p>4.8 ⭐⭐⭐⭐</p>
+      <p>$999 <del>1599</del></p>
+      <div class="overlay-content">
+        <p>5 Nights · Marina Bay View · Breakfast</p>
+        <a href="#" class="book-btn">Book Now</a>
+      </div>
+    </div>
+
+    <div class="Travel-card">
+      <img src="./images/d16.jpg" alt="Sri Lanka"/>
+      <h3>Sri Lanka</h3>
+      <p>4.8 ⭐⭐⭐⭐</p>
+      <p>$899 <del>1099</del></p>
+      <div class="overlay-content">
+        <p>6 Nights · Safari Tour · All Meals</p>
+        <a href="#" class="book-btn">Book Now</a>
+      </div>
+    </div>
+
+    <div class="Travel-card">
+      <img src="./images/capetown.jpg" alt="Cape Town"/>
+      <h3>Cape Town, South Africa</h3>
+      <p>4.9 ⭐⭐⭐⭐</p>
+      <p>$1099 <del>1799</del></p>
+      <div class="overlay-content">
+        <p>7 Nights · Table Mountain Tour · Wine Tasting</p>
+        <a href="#" class="book-btn">Book Now</a>
+      </div>
+    </div>
+
+    <div class="Travel-card">
+      <img src="./images/dubai.jpg" alt="Dubai"/>
+      <h3>Dubai, UAE</h3>
+      <p>4.8 ⭐⭐⭐⭐</p>
+      <p>$999 <del>1599</del></p>
+      <div class="overlay-content">
+        <p>5 Nights · Desert Safari · Burj Khalifa Entry</p>
+        <a href="#" class="book-btn">Book Now</a>
+      </div>
+    </div>
+
+    <!-- 6 New Destinations -->
+    <div class="Travel-card">
+      <img src="./images/athens.jpg" alt="Athens"/>
+      <h3>Athens, Greece</h3>
+      <p>4.7 ⭐⭐⭐⭐</p>
+      <p>$799 <del>1399</del></p>
+      <div class="overlay-content">
+        <p>5 Nights · Acropolis Tour · Breakfast</p>
+        <a href="#" class="book-btn">Book Now</a>
+      </div>
+    </div>
+
+    <div class="Travel-card">
+      <img src="./images/peru.jpg" alt="Machu Picchu"/>
+      <h3>Machu Picchu, Peru</h3>
+      <p>4.9 ⭐⭐⭐⭐⭐</p>
+      <p>$1199 <del>1899</del></p>
+      <div class="overlay-content">
+        <p>6 Nights · Guided Trek · Train Tickets</p>
+        <a href="#" class="book-btn">Book Now</a>
+      </div>
+    </div>
+
+    <div class="Travel-card">
+      <img src="./images/Barcelona.jpg" alt="Barcelona"/>
+      <h3>Barcelona, Spain</h3>
+      <p>4.8 ⭐⭐⭐⭐</p>
+      <p>$899 <del>1499</del></p>
+      <div class="overlay-content">
+        <p>4 Nights · Sagrada Familia Tour</p>
+        <a href="#" class="book-btn">Book Now</a>
+      </div>
+    </div>
+
+    <div class="Travel-card">
+      <img src="./images/turkey.jpg" alt="Istanbul"/>
+      <h3>Istanbul, Turkey</h3>
+      <p>4.7 ⭐⭐⭐⭐</p>
+      <p>$849 <del>1399</del></p>
+      <div class="overlay-content">
+        <p>5 Nights · Bosphorus Cruise · Breakfast</p>
+        <a href="#" class="book-btn">Book Now</a>
+      </div>
+    </div>
+
+    <div class="Travel-card">
+      <img src="./images/Hawaii.jpg" alt="Hawaii"/>
+      <h3>Hawaii, USA</h3>
+      <p>4.9 ⭐⭐⭐⭐</p>
+      <p>$1299 <del>1999</del></p>
+      <div class="overlay-content">
+        <p>7 Nights · Beach Resort · Surf Lessons</p>
+        <a href="#" class="book-btn">Book Now</a>
+      </div>
+    </div>
+     <div class="Travel-card">
+      <img src="./images/Losangeles.jpg" alt="Losangeles"/>
+      <h3>Losangeles, USA</h3>
+      <p>4.9 ⭐⭐⭐⭐</p>
+      <p>$1299 <del>1999</del></p>
+      <div class="overlay-content">
+        <p>7 Nights · Disney · Hollywood</p>
+        <a href="#" class="book-btn">Book Now</a>
+      </div>
+    </div>
+     <div class="Travel-card">
+      <img src="./images/Tamilnadu.jpg" alt="Tamilnadu"/>
+      <h3>Tamilnadu, India</h3>
+      <p>4.9 ⭐⭐⭐⭐</p>
+      <p>$1299 <del>1999</del></p>
+      <div class="overlay-content">
+        <p>7 Nights · Temples · western ghats</p>
+        <a href="#" class="book-btn">Book Now</a>
+      </div>
+    </div>
+
+    <div class="Travel-card">
+      <img src="./images/Kerala.jpg" alt="kerala"/>
+      <h3>Kerala, India</h3>
+      <p>4.8 ⭐⭐⭐⭐</p>
+      <p>$1399 <del>2099</del></p>
+      <div class="overlay-content">
+        <p>5 Nights · Boat house . Resorts</p>
+        <a href="#" class="book-btn">Book Now</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- section page -->
+<section class="section">
+  <h2>Browsed Theme Collections</h2>
+  <div class="card-grid">
+    <div class="card">
+      <img src="./images/pizza.jpg" alt="Italy">
+      <p>Pizza, Roman style, Italy</p>
+    </div>
+    <div class="card">
+      <img src="./images/reef australia.jpg" alt="Australia">
+      <p>Get right to the reef</p>
+    </div>
+    <div class="card">
+      <img src="./images/Molin rouge.jpg" alt="Paris">
+      <p>Only in Paris</p>
+    </div>
+    <div class="card">
+      <img src="./images/Alaska.jpg" alt="USA">
+      <p>Sailing around, Alaska</p>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer__one">
+    <section class="footer__one__s1">
+      <h3>About Trip Advisor</h3>
+      <ul>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Press</a></li>
+        <li><a href="#">Resources and Policies</a></li>
+        <li><a href="#">Trust and Safety</a></li>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#">Bug Bounty Program</a></li>
+        <li><a href="#">Trip Advisor Technology</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Careers</a></li>
+      </ul>
+    </section>
+
+    <section class="footer__one__s2">
+      <h3>Explore</h3>
+      <ul>
+        <li><a href="#">Write a Review</a></li>
+        <li><a href="#">Add a place</a></li>
+        <li><a href="#">Join</a></li>
+        <li><a href="#">Traveler's Choice</a></li>
+        <li><a href="#">Help Center</a></li>
+        <li><a href="#">Travel Articles</a></li>
+        <li><a href="#">Travel Forum</a></li>
+        <li><a href="#">Trip Advisor Plus</a></li>
+        <li><a href="#">Trip Advisor for Business</a></li>
+      </ul>
+    </section>
+
+    <section class="footer__one__s3">
+      <h3>Get the APP</h3>
+      <ul>
+        <li><a href="#">iPhone APP</a></li>
+        <li><a href="#">Android APP</a></li>
+      </ul>
+    </section>
+  </div>
+
+  <div class="footer__two">
+    <div class="footer__two__branding">
+      <h1>Tripadvisor</h1>
+      <img src="./images/Tripadvisor_logo_PNG1.png" alt="Logo" class="footer-logo">
+    </div>
+    <p>&copy; 2025 TripClone. All rights reserved.</p>
+    <div class="footer__two__currency">
+      <a href="#" class="currency-btn">
+        <i class="fa-solid fa-globe"></i>
+        USD
+      </a>
+      <a href="#" class="signin">United States</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  
+  const track = document.querySelector('.carousel-track');
+  const prevButton = document.querySelector('.carousel-btn.prev');
+  const nextButton = document.querySelector('.carousel-btn.next');
+
+  let slideWidth; // Will be calculated dynamically
+  let currentPosition = 0;
+
+  function updateSlideWidth() {
+    const firstSlide = track.children[0];
+    const slideStyles = window.getComputedStyle(firstSlide);
+    slideWidth = firstSlide.offsetWidth + parseInt(slideStyles.marginRight);
+  }
+
+  function updateButtons() {
+    const maxTranslateX = -(slideWidth * (track.children.length - Math.floor(track.parentElement.offsetWidth / slideWidth)));
+    prevButton.disabled = currentPosition >= 0;
+    nextButton.disabled = currentPosition <= maxTranslateX;
+  }
+
+  function moveCarousel(direction) {
+    const maxTranslateX = -(slideWidth * (track.children.length - Math.floor(track.parentElement.offsetWidth / slideWidth)));
+    if (direction === 'prev' && currentPosition < 0) {
+      currentPosition += slideWidth;
+    } else if (direction === 'next' && currentPosition > maxTranslateX) {
+      currentPosition -= slideWidth;
+    }
+    track.style.transform = `translateX(${currentPosition}px)`;
+    updateButtons();
+  }
+
+  prevButton.addEventListener('click', () => moveCarousel('prev'));
+  nextButton.addEventListener('click', () => moveCarousel('next'));
+
+  window.addEventListener('resize', () => {
+    updateSlideWidth();
+    updateButtons();
+  });
+
+  // Init
+  updateSlideWidth();
+  updateButtons();
+</script>
+</body>
+</html>
